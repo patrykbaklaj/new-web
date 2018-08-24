@@ -1,0 +1,68 @@
+.page-header {
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    width: 100%;
+
+    &.home-page {
+        min-height: 100vh;
+        background-image: url("../assets/images/page-header-home.jpg")
+    }
+
+    .page-intro {
+
+        font-family: 'Poppins',
+        sans-serif;
+        color: $page-intro-color;
+
+        &__title {
+            font-size: 4em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 100%;
+            margin-top: 2em;
+            word-wrap: break-word;
+
+            @media (max-width: 768px) {
+                font-size: 2.5em;
+            }
+        }
+
+        &__description {
+            margin: 3em auto;
+            width: 50%;
+            line-height: 1.5;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                font-size: .9em;
+            }
+        }
+
+        &__button {
+            padding: 1em 4em;
+            background: $button-offer-color;
+            border-radius: 3px;
+            transition: all 0.25s;
+
+            @media (max-width: 768px) {
+                padding: 1em 4em;
+            }
+            
+            &:hover {
+                background-color: #6a4d8a;
+            }
+
+        }
+    }
+
+    .dot {
+        color: $dot-color;
+        font-size: 2em;
+        display: inline-block;
+
+    }
+}
