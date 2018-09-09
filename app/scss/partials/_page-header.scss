@@ -1,11 +1,5 @@
 .page-header {
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    text-align: center;
-    width: 100%;
+
 
     &.home-page {
         min-height: 100vh;
@@ -14,8 +8,6 @@
 
     .page-intro {
 
-        font-family: 'Poppins',
-        sans-serif;
         color: $page-intro-color;
 
         &__title {
