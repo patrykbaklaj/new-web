@@ -2,6 +2,10 @@
         background: url('../assets/images/testiomnials-background.jpg');
         color: $testimonials-color;
 
+        .short__title {
+            color: $short-title-color-testimonials;
+        }
+
         [class*="testimonioals-icon"] {
 
             margin: 0 auto 1.5em auto;

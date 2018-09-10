@@ -5,6 +5,7 @@
 @import 'partials/counter';
 @import 'partials/project-intro';
 @import 'partials/testimonials-intro';
+@import 'partials/team-intro';
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
 
@@ -50,20 +51,25 @@ html {
 
 
     &__title {
-        font-size: 2.5em;
-        padding: 1em;
+        color: $short-title-color;
+        font-size: 2.2em;
         font-weight: 700;
+        padding: 1em;
+//        text-shadow: 1px 0px 1px #5e5e5e;
     }
 
     &__description {
+        color: $short-text-color;
         line-height: 1.5;
-        width: 80%;
         margin: 1em auto 4em auto;
+        width: 80%;
     }
 }
 
-.project-intro {
+.project-intro, 
+.team-intro {
 
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJElEQVQoU2NkIAIwEqGGgYaKsrOy/0+dNhXFBhpah823RFkHAJroBAqI3w7lAAAAAElFTkSuQmCC);
-    padding-bottom: 0;
+//    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJElEQVQoU2NkIAIwEqGGgYaKsrOy/0+dNhXFBhpah823RFkHAJroBAqI3w7lAAAAAElFTkSuQmCC);
+    background: url("../assets/images/frontpage-pattern.png");
+    background-attachment: fixed;
 }

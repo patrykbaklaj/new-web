@@ -137,6 +137,18 @@ table {
       .project-intro .project-intro-gallery__item:hover::after {
         background: none; }
 
+.testimonials-intro {
+  background: url(50b8f0f8fd5dddc833e7a0d976c05d77.jpg);
+  color: #fff; }
+  .testimonials-intro .short__title {
+    color: #fff; }
+  .testimonials-intro [class*="testimonioals-icon"] {
+    margin: 0 auto 1.5em auto;
+    width: 10%; }
+    .testimonials-intro [class*="testimonioals-icon"] img {
+      height: auto;
+      width: 100%; }
+
 @keyframes slideIn {
   0% {
     opacity: 0%;
@@ -144,24 +156,6 @@ table {
   100% {
     opacity: 1;
     transform: translateX(0%); } }
-
-@keyframes slideOut {
-  0% {
-    opacity: 0%;
-    transform: translateX(100%); }
-  100% {
-    opacity: 1;
-    transform: translateX(0%); } }
-
-.testimonials-intro {
-  background: url(50b8f0f8fd5dddc833e7a0d976c05d77.jpg);
-  color: #fff; }
-  .testimonials-intro [class*="testimonioals-icon"] {
-    margin: 0 auto 1.5em auto;
-    width: 10%; }
-    .testimonials-intro [class*="testimonioals-icon"] img {
-      height: auto;
-      width: 100%; }
   .testimonials-intro .testimonials-item {
     display: none;
     transition: all 0.4s; }
@@ -172,11 +166,6 @@ table {
       animation: slideIn 1.5s backwards;
       display: block; }
     .testimonials-intro .testimonials-item.hide {
-      animation: slideOut 1.5s backwards;
-      display: none; }
-    .testimonials-intro .testimonials-item.visible {
-      display: block; }
-    .testimonials-intro .testimonials-item.invisible {
       display: none; }
   .testimonials-intro .quote {
     font-weight: 300;
@@ -197,6 +186,37 @@ table {
       margin: 0 .2em; }
       .testimonials-intro .testimonials-control__button.active {
         color: white; }
+
+.workers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  padding-bottom: 2em; }
+  .workers .person {
+    display: flex;
+    width: 33%; }
+    .workers .person:nth-child(2) {
+      margin: 0 1.5em; }
+    .workers .person-image {
+      width: 40%;
+      max-width: 110px;
+      margin-right: 1em; }
+      .workers .person-image img {
+        width: 100%;
+        height: auto; }
+    .workers .person-content {
+      width: 60%; }
+      .workers .person-content p {
+        font-size: .9em;
+        color: #4a5255; }
+      .workers .person-content .position {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #6a6a6a; }
+      .workers .person-content .quote {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 1.3em 0; }
 
 body,
 html {
@@ -240,14 +260,17 @@ html {
   min-height: 40vh;
   padding: 2em 0; }
   .short__title {
-    font-size: 2.5em;
-    padding: 1em;
-    font-weight: 700; }
+    color: #545454;
+    font-size: 2.2em;
+    font-weight: 700;
+    padding: 1em; }
   .short__description {
+    color: #4a5255;
     line-height: 1.5;
-    width: 80%;
-    margin: 1em auto 4em auto; }
+    margin: 1em auto 4em auto;
+    width: 80%; }
 
-.project-intro {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJElEQVQoU2NkIAIwEqGGgYaKsrOy/0+dNhXFBhpah823RFkHAJroBAqI3w7lAAAAAElFTkSuQmCC);
-  padding-bottom: 0; }
+.project-intro,
+.team-intro {
+  background: url(4acc5d388188a4f35a65033e2319f637.png);
+  background-attachment: fixed; }

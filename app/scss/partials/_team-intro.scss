@@ -1,0 +1,56 @@
+.team-intro {
+}
+
+.workers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+
+    .person {
+        display: flex;
+        width: 33%;
+
+        &:nth-child(2) {
+            margin: 0 1.5em;
+        }
+        
+        &-image {
+            width: 40%;
+            max-width: 110px;
+            margin-right: 1em;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        &-content {
+            width: 60%;
+            
+            p {
+                font-size: .9em;
+                color: $short-text-color;
+            }
+            
+            .position {
+                font-size: 1.3em;
+                font-weight: bold;
+                color: $person-intro-position-color;
+            }
+            
+            .quote {
+                font-weight: 300;
+                font-size: 1em;
+                margin: 1.3em 0;
+            }
+            
+            
+        }
+        
+        
+    }
+}
+
+
