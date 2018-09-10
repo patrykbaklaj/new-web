@@ -1,23 +1,78 @@
-.testimonials-intro {
-    background: url('../assets/images/testiomnials-background.jpg');
-    color: $testimonials-color;
+    .testimonials-intro {
+        background: url('../assets/images/testiomnials-background.jpg');
+        color: $testimonials-color;
 
-    [class*="testimonioals-icon"] {
+        [class*="testimonioals-icon"] {
 
-        width: 10%;
-        margin: 0 auto 1.5em auto;
+            margin: 0 auto 1.5em auto;
+            width: 10%;
 
-        img {
-            width: 100%;
-            height: auto;
+            img {
+                height: auto;
+                width: 100%;
+            }
         }
-    }
 
-    .quote {
-        width: 50%;
-        margin: 0 auto;
-        font-weight: 300;
-        line-height: 1.5;
-        font-size: .9em;
+        @keyframes slideIn {
+            0% {
+                opacity: 0%;
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
+
+        .testimonials-item {
+            display: none;
+            transition: all 0.4s;
+
+
+            &__author {
+                font-size: 1.5em;
+                margin-bottom: 1em;
+            }
+
+            &.show {
+                animation: slideIn 1.5s backwards;
+                display: block;
+            }
+
+            &.hide {
+                display: none;
+            }
+
+        }
+
+        .quote {
+            font-weight: 300;
+            font-size: .9em;
+            line-height: 1.5;
+            margin: 0 auto;
+            width: 50%;
+            min-height: 15vh;
+
+            @media (max-width: 900px) {
+                min-height: 25vh;
+            }
+        }
+
+        .testimonials-control {
+            margin: 2em auto;
+
+            &__button {
+                color: gray;
+                cursor: pointer;
+                display: inline-block;
+                margin: 0 .2em;
+
+                &.active {
+                    color: white;
+                }
+            }
+        }
+
+
     }
-}
