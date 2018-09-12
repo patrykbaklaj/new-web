@@ -9,6 +9,7 @@
     <title>Strony www, sklepy internetowe, pozycjonowanie, seo, Poznań - New Web</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <link rel="stylesheet" href="app/build/main.css">
 </head>
 
@@ -219,23 +220,46 @@
                 </div>
             </div>
         </section>
-        
-                <section class="section short contact-intro">
+
+        <section class="section short contact-intro">
             <div class="container">
-                <div class="">
-                    <h2 class="short__title">Kontakt z nami</h2>
-                    <h3 class="short__description">
-                        Jeśli zainteresowała Cię nasza oferta to zachęcamy do współpracy. Z chęcią opowiemy Ci więcej o nas i naszych usługach.
-                    </h3>
+                <h2 class="short__title">Kontakt z nami</h2>
+                <h3 class="short__description">
+                    Jeśli zainteresowała Cię nasza oferta to zachęcamy do kontaktu. Z chęcią opowiemy Ci więcej o nas i naszych usługach.
+                </h3>
+                <div class="contact-data">
+                    <div class="contact-data__column">
+                        <p>Email: <a href="mailto:info@new-web.pl">info@new-web.pl</a></p>
+                        <p>Telefon: <a href="tel:+48502486184">502486184</a></p>
+                    </div>
+                    <div class="contact-data__column social">
+                        <p><a href=""><i class="fab fa-facebook-square"></i></a></p>
+                        <p><a href=""><i class="fab fa-google-plus-square"></i></a></p>
+                    </div>
+                    <div class="contact-data__column">
+                        <p>ul. Wołkowyska 4C/1</p>
+                        <p>61-132 Poznań</p>
+                    </div>
                 </div>
             </div>
+            <div class="map">
+
+            </div>
         </section>
-
-
-
     </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <p>New Web <span>© Copyright 2018. All Rights Reserved.</span></p>
+            </div>
+        </div>
+    </footer>
 
     <script src="app/build/out.js"></script>
+    <script src="app/js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqjPW7GvKOhiqrV8yj9mJB7wrsd0-e4n4&callback=initMap">
+    </script>
+
 </body>
 
 </html>

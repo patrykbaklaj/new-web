@@ -1,0 +1,11 @@
+.contact-data {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    padding: 1em 0 3em 0;
+    
+    .social i {
+        font-size: 1.5em;
+        line-height: 1;
+    }
+}

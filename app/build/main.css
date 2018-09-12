@@ -216,7 +216,30 @@ table {
       .workers .person-content .quote {
         font-weight: 300;
         font-size: 1em;
-        margin: 1.3em 0; }
+        margin: 1.3em 0;
+        color: #8224e3; }
+
+.contact-data {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  padding: 1em 0 3em 0; }
+  .contact-data .social i {
+    font-size: 1.5em;
+    line-height: 1; }
+
+.map {
+  min-height: 380px;
+  width: 100%; }
+
+.footer {
+  background: #000;
+  color: #8c9597;
+  font-size: .9em;
+  line-height: 4em;
+  text-align: center; }
+  .footer span {
+    color: #fff; }
 
 body,
 html {
@@ -269,6 +292,8 @@ html {
     line-height: 1.5;
     margin: 1em auto 4em auto;
     width: 80%; }
+  .short.contact-intro {
+    padding-bottom: 0; }
 
 .project-intro,
 .team-intro {
