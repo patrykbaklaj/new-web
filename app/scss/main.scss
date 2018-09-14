@@ -1,10 +1,13 @@
 @import 'partials/reset';
 @import 'partials/colors';
+@import 'partials/nav';
+
 
 @import 'partials/page-header';
 @import 'partials/counter';
 @import 'partials/project-intro';
 @import 'partials/testimonials-intro';
+@import 'partials/services-intro';
 @import 'partials/team-intro';
 @import 'partials/contact-intro';
 @import 'partials/google-map';
@@ -36,6 +39,11 @@ html {
     }
 }
 
+.main {
+
+    margin-top: 4em;
+}
+
 .section {
     align-items: center;
     background-size: cover;
@@ -58,8 +66,7 @@ html {
         color: $short-title-color;
         font-size: 2.2em;
         font-weight: 700;
-        padding: 1em;
-//        text-shadow: 1px 0px 1px #5e5e5e;
+        padding: 1em; //        text-shadow: 1px 0px 1px #5e5e5e;
     }
 
     &__description {
@@ -68,16 +75,15 @@ html {
         margin: 1em auto 4em auto;
         width: 80%;
     }
-    
-    &.contact-intro {
+
+    &.contact-intro,
+    &.project-intro {
         padding-bottom: 0;
     }
 }
 
-.project-intro, 
-.team-intro {
-
-//    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJElEQVQoU2NkIAIwEqGGgYaKsrOy/0+dNhXFBhpah823RFkHAJroBAqI3w7lAAAAAElFTkSuQmCC);
+.project-intro {
+    //    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJElEQVQoU2NkIAIwEqGGgYaKsrOy/0+dNhXFBhpah823RFkHAJroBAqI3w7lAAAAAElFTkSuQmCC);
     background: url("../assets/images/frontpage-pattern.png");
     background-attachment: fixed;
 }

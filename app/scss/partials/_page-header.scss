@@ -3,7 +3,11 @@
 
     &.home-page {
         min-height: 100vh;
-        background-image: url("../assets/images/page-header-home.jpg")
+        background-image: url("../assets/images/page-header-home.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+//        margin-top: 4em;
+
     }
 
     .page-intro {
@@ -43,7 +47,7 @@
             @media (max-width: 768px) {
                 padding: 1em 4em;
             }
-            
+
             &:hover {
                 background-color: #6a4d8a;
             }

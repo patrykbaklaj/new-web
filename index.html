@@ -14,26 +14,38 @@
 </head>
 
 <body id="scroll">
-    <!--
-    <header>
+
+    <header class="header">
         <div class="container">
             <div class="header-wraper">
                 <div class="logo">
                     New Web
                 </div>
                 <nav class="navbar">
-                    <ul>
-                        <li>Home</li>
-                        <li>Oferta</li>
-                        <li>O nas</li>
-                        <li>Kontakt</li>
+                    <ul class="navbar__main">
+                        <li class="navbar__item-main"><a href="/">Home</a></li>
+                        <li class="navbar__item-main with-submenu">
+                            <a href="/oferta.html">
+                                Oferta
+                            </a>
+                            <ul class="navbar__sub">
+                                <div class="container">
+                                    <li class="navbar__item-sub"><a href="">Oferta</a></li>
+                                    <li class="navbar__item-sub"><a href="">Strony www</a></li>
+                                    <li class="navbar__item-sub"><a href="">Sklepy internetowe</a></li>
+                                    <li class="navbar__item-sub"><a href="">Pozycjonowanie (SEO)</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="navbar__item-main"><a href="/o-nas.html">O nas</a></li>
+                        <li class="navbar__item-main"><a href="/kontakt.html">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
--->
-    <main>
+
+    <main class="main">
         <section class="page-header home-page section">
             <div class="container">
                 <div class="page-intro">
@@ -138,6 +150,37 @@
 
                 <h2 class="short__title">Nasze usługi</h2>
                 <h3 class="short__description">Nasze usługi</h3>
+                <div class="services-wraper">
+                    <div class="service__item pages">
+                        <a class="service__item-link" href="">
+                            <div class="service__item-icon"><i class="fa fa fa-code"></i></div>
+                            <div class="service__item-name">Strony www</div>
+                            <div class="service__item-text">
+                                Projektujemy i tworzymy strony internetowe przeznaczone dla biznesu oraz Klientów indywidualnych. Jesteśmy elastyczni, realizując projekty na miarę potrzeb.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="service__item shops">
+                        <a class="service__item-link" href="">
+
+                            <div class="service__item-icon"><i class="fa fa fa-cart-plus"></i></div>
+                            <div class="service__item-name">Sklepy internetowe</div>
+                            <div class="service__item-text">
+                                Sklepy internetowe zaprojektowane przez New Web tworzone są z myślą o użytkowniku. Twój pomysł na biznes, przekładamy na realną sprzedaż internetową.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="service__item seo">
+                        <a class="service__item-link" href="">
+                            <div class="service__item-icon"><i class="fa fa fa-search"></i></div>
+
+                            <div class="service__item-name">Pozycjonowanie (SEO)</div>
+                            <div class="service__item-text">
+                                Promujemy strony internetowe w wyszukiwarce Google. Dzięki naszym metodom pozycjonowania, Twoja oferta ma szansę dotrzeć do większego grona odbiorców.
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 

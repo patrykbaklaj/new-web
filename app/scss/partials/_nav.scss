@@ -1,0 +1,151 @@
+.header {
+    background: $nav-background;
+    color: $header-color;
+    position: relative;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    font-weight: 400;
+}
+
+.header-wraper {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.logo {}
+
+.navbar__main {}
+
+
+
+
+.navbar__item {
+    &-main {
+        display: inline-block;
+        margin: 0 1em;
+        line-height: 4em;
+
+        a {
+            transition: all .3s;
+            position: relative;
+            padding: 0 0 .35em 0;
+            line-height: 2em;
+
+            &::after {
+                transition: all 0.23s;
+                position: absolute;
+                height: 0px;
+                left: -10%;
+                bottom: -15px;
+                content: "";
+                width: 120%;
+                height: 2px;
+                background: $dot-color;
+                border-radius: 3px;
+                opacity: 0;
+            }
+
+            &:hover {
+                color: $dot-color;
+
+                &::after {
+                    opacity: 1;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    &-main:last-child {
+        margin-right: 0;
+    }
+
+    &-sub {
+        display: inline-block;
+        font-size: 0.8em;
+        margin: 0 1em;
+
+        a {
+            border-bottom: 2px solid rgba(0, 0, 0, 0);
+
+            &::after {
+                content: none;
+            }
+
+            &:hover {
+                border-color: $dot-color;
+            }
+        }
+    }
+
+    &-sub:last-child {
+        margin-right: 0;
+    }
+
+    &-sub:first-child a {
+        border: none;
+        color: #272b2f;
+        font-size: 4em;
+        font-weight: 300;
+        line-height: 1em;
+        margin-right: 2em;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+
+
+}
+
+.navbar__sub {
+    display: none;
+    background: $nav-background-second;
+    bottom: -4em;
+    left: 0;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    20% {
+        opacity: 40%;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+//
+.fadeIn {
+    animation: fadeIn .6s;
+}
+
+//
+.fadeOut {
+    animation: fadeOut .6s;
+}
