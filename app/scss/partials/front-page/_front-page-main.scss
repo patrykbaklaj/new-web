@@ -1,0 +1,25 @@
+.short {
+
+    min-height: 40vh;
+    padding: 2em 0;
+
+
+    &__title {
+        color: $short-title-color;
+        font-size: 2.2em;
+        font-weight: 700;
+        padding: 1em;
+    }
+
+    &__description {
+        color: $short-text-color;
+        line-height: 1.5;
+        margin: 1em auto 4em auto;
+        width: 80%;
+    }
+
+    &.contact-intro,
+    &.project-intro {
+        padding-bottom: 0;
+    }
+}

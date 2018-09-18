@@ -8,8 +8,8 @@
         .short__description {
             color: $short-title-color-testimonials;
         }
-        
-        
+
+
 
         [class*="testimonioals-icon"] {
 
@@ -19,6 +19,8 @@
             img {
                 height: auto;
                 width: 100%;
+                border-radius: 50%;
+
             }
         }
 

@@ -1,12 +1,10 @@
 export function runTestimonialsSlider() {
     const testimonialsList = document.getElementsByClassName("testimonials-item");
     const controlList = document.getElementsByClassName("testimonials-control");
+    const ul = document.createElement("ul");
 
     function setDefault() {
 
-
-
-        const ul = document.createElement("ul");
 
         for (let i = 1; i <= testimonialsList.length; i++) {
             ul.innerHTML += "<li class='testimonials-control__button' data-target=" + i + "><i class='far fa-circle'></i></li>";
@@ -23,11 +21,12 @@ export function runTestimonialsSlider() {
                 for (let j = 0; j < testimonialsList.length; j++) {
                     testimonialsList[j].classList.remove("show");
                     testimonialsList[j].classList.add("hide");
+                    ul.children[j].classList.remove("active");
                 }
-
                 testimonialsList[parseInt(this.dataset.target) - 1].classList.remove("hide");
                 testimonialsList[parseInt(this.dataset.target) - 1].classList.add("show");
-            })
+                this.classList.add("active");
+            });
         }
     }
 
