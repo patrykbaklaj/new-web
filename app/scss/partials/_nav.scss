@@ -1,7 +1,6 @@
 .header {
     background: $nav-background;
     color: $header-color;
-    position: relative;
     position: fixed;
     width: 100%;
 }
@@ -16,45 +15,38 @@
     line-height: 1.5;
 }
 
-.logo {}
-
-.navbar__main {}
-
-
-
-
 .navbar__item {
     &-main {
         display: inline-block;
-        margin: 0 1em;
         line-height: 4em;
+        margin: 0 1em;
 
         a {
-            transition: all .3s;
-            position: relative;
-            padding: 0 0 .35em 0;
             line-height: 2em;
+            padding: 0 0 .35em 0;
+            position: relative;
+            transition: all .3s;
 
             &::after {
-                transition: all 0.23s;
-                position: absolute;
-                height: 0px;
-                left: -10%;
-                bottom: -15px;
-                content: "";
-                width: 120%;
-                height: 2px;
                 background: $dot-color;
                 border-radius: 3px;
+                bottom: -15px;
+                content: "";
+                transition: all 0.23s;
+                //                height: 0px;
+                height: 2px;
+                left: -10%;
                 opacity: 0;
+                position: absolute;
+                width: 120%;
             }
 
             &:hover {
                 color: $dot-color;
 
                 &::after {
-                    opacity: 1;
                     bottom: 0;
+                    opacity: 1;
                 }
             }
         }
@@ -96,20 +88,17 @@
         padding: 0;
         vertical-align: middle;
     }
-
-
-
 }
 
 .navbar__sub {
-    display: none;
     background: $nav-background-second;
     bottom: -4em;
+    display: none;
     left: 0;
     position: absolute;
     text-align: right;
-    width: 100%;
     transition: all 0.4s;
+    width: 100%;
 }
 
 @keyframes fadeIn {
@@ -130,22 +119,20 @@
 
 @keyframes fadeOut {
     0% {
-        transform: translateX(0);
         opacity: 1;
+        transform: translateX(0);
     }
 
     100% {
-        opacity: 0;
         transform: translateX(-100%);
+        opacity: 0;
     }
 }
 
-//
 .fadeIn {
     animation: fadeIn .6s;
 }
 
-//
 .fadeOut {
     animation: fadeOut .6s;
 }

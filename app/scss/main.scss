@@ -1,8 +1,6 @@
 @import 'partials/reset';
 @import 'partials/colors';
 @import 'partials/nav';
-
-
 @import 'partials/page-header';
 @import 'partials/counter';
 @import 'partials/project-intro';
@@ -20,7 +18,6 @@ body,
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-
     min-height: 100vh;
     overflow-x: hidden;
 
@@ -31,8 +28,8 @@ html {
 }
 
 .container {
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 
     @media screen and (max-width: 768px) {
         width: 90%;
@@ -46,9 +43,9 @@ html {
 
 .section {
     align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;

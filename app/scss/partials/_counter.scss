@@ -1,10 +1,9 @@
 #counter {
-    padding: 4em 0;
-
     background: url("../assets/images/counter-background.jpg");
-    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em 0;
 
     .counter-wraper {
         display: flex;
@@ -12,9 +11,9 @@
     }
 
     .counter-item {
-        text-align: center;
         color: $counter-color;
         font-weight: 700;
+        text-align: center;
         text-shadow: 1px 1px 1px gray;
         width: 33%;
 
@@ -24,17 +23,17 @@
 
         &__text {
             font-size: 1.2em;
+            letter-spacing: 2px;
             padding-top: 1em;
             text-transform: uppercase;
-            letter-spacing: 2px;
         }
     }
 
     .separator {
-        width: 2px;
-        text-shadow: 1px 1px 1px gray;
-        background: $counter-color;;
         display: block;
+        background: $counter-color;;
         line-height: 2em;
+        text-shadow: 1px 1px 1px gray;
+        width: 2px;
     }
 }
