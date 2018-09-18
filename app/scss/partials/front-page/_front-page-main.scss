@@ -1,25 +1,32 @@
-.short {
-
-    min-height: 40vh;
-    padding: 2em 0;
-
-
-    &__title {
-        color: $short-title-color;
-        font-size: 2.2em;
-        font-weight: 700;
-        padding: 1em;
+    .home-page {
+        min-height: 100vh;
+        background-image: url("../assets/images/page-header-home.jpg");
+        background-attachment: fixed;
+        background-size: cover;
     }
 
-    &__description {
-        color: $short-text-color;
-        line-height: 1.5;
-        margin: 1em auto 4em auto;
-        width: 80%;
-    }
+    .short {
 
-    &.contact-intro,
-    &.project-intro {
-        padding-bottom: 0;
+        min-height: 40vh;
+        padding: 2em 0;
+
+
+        &__title {
+            color: $short-title-color;
+            font-size: 2.2em;
+            font-weight: 700;
+            padding: 1em;
+        }
+
+        &__description {
+            color: $short-text-color;
+            line-height: 1.5;
+            margin: 1em auto 4em auto;
+            width: 80%;
+        }
+
+        &.contact-intro,
+        &.project-intro {
+            padding-bottom: 0;
+        }
     }
-}

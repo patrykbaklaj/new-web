@@ -30,6 +30,9 @@ export function runTestimonialsSlider() {
         }
     }
 
-    setDefault();
-    setControls();
+    if (testimonialsList.length > 0) {
+        console.log(testimonialsList);
+        setDefault();
+        setControls();
+    }
 }

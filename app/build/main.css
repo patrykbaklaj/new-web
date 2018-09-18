@@ -133,15 +133,9 @@ table {
 .fadeOut {
   animation: fadeOut .6s; }
 
-.page-header.home-page {
-  min-height: 100vh;
-  background-image: url(ea675ca3d4b5bad787c53e7c3dce8440.jpg);
-  background-attachment: fixed;
-  background-size: cover; }
-
-.page-header .page-intro {
+.page-intro {
   color: #fff; }
-  .page-header .page-intro__title {
+  .page-intro__title {
     font-size: 4em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -149,31 +143,37 @@ table {
     margin-top: 2em;
     word-wrap: break-word; }
     @media (max-width: 768px) {
-      .page-header .page-intro__title {
+      .page-intro__title {
         font-size: 2.5em; } }
-  .page-header .page-intro__description {
+  .page-intro__description {
     margin: 3em auto;
     width: 50%;
     line-height: 1.5; }
     @media (max-width: 768px) {
-      .page-header .page-intro__description {
+      .page-intro__description {
         width: 100%;
         font-size: .9em; } }
-  .page-header .page-intro__button {
+  .page-intro__button {
     padding: 1em 4em;
     background: #f1d204;
     border-radius: 3px;
     transition: all 0.25s; }
     @media (max-width: 768px) {
-      .page-header .page-intro__button {
+      .page-intro__button {
         padding: 1em 4em; } }
-    .page-header .page-intro__button:hover {
+    .page-intro__button:hover {
       background-color: #6a4d8a; }
 
-.page-header .dot {
+.dot {
   color: #ffde00;
   font-size: 2em;
   display: inline-block; }
+
+.home-page {
+  min-height: 100vh;
+  background-image: url(ea675ca3d4b5bad787c53e7c3dce8440.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
 
 .short {
   min-height: 40vh;
