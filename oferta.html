@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,22 +45,24 @@
         </div>
     </header>
 
-    <main class="main">
-        <section class="page-header home-page section">
+    <main class="main offer-page offer-details">
+        <section class="page-header section">
             <div class="container">
                 <div class="page-intro">
                     <h1 class="page-intro__title">
                         Oferta
                     </h1>
                     <h3 class="page-intro__description">
-                        Twoi Klienci korzystają z internetu? Daj się znaleźć i zwiększ zainteresowanie dzięki nowoczesnej i przyjaznej stronie www. Realizujemy różne projekty - od małych wizytówek, poprzez duże serwisy, aż po sklepy internetowe. Pomagamy także naszym Klientom w zakresie SEO, aby byli łatwo i szybko widoczni w sieci.
+                        Specjalizujemy się w tworzeniu nowoczesnych, responsywnych stron internetowych, wyróżniających naszych Klientów spośród konkurencji. Dla nas liczy się unikatowy styl, optymalna treść oraz stabilność i szybkość działania. <span class="underscore">Zobacz co możemy zaoferować.</span>
+                        <!--                        Każdy projekt jest unikatowy oraz dopasowany do potrzeb Klienta, a także odbiorcy. Strony intrnetowe tworzone przez New Web opierają się na nowoczesnych i sprawdzonych technologiach, zapewniających stabilność oraz szybkość działania. Zobacz, co możemy zaoferować-->
                     </h3>
-                    <a href="/oferta.html" class="page-intro__button">Oferta</a>
+                    <a href="#offer" class="page-intro__arrow"><i class="fas fa-chevron-circle-down"></i></a>
                 </div>
             </div>
         </section>
 
-        <section class="section short about-intro">
+        <!--
+        <section class="section short about-intro" id="offer">
             <div class="container">
                 <div class="">
                     <h2 class="short__title">Poznaj nas</h2>
@@ -69,45 +72,127 @@
                 </div>
             </div>
         </section>
+-->
 
-        <section class="section short services-intro">
+        <section class="section short web-image">
             <div class="container">
 
-                <h2 class="short__title">Nasze usługi</h2>
-                <h3 class="short__description">Możemy pomóc Twojemu biznesowi, potęgując przewagę konkurencyjną poprzez budowanie wizerunku i poprawę widoczności w sieci.</h3>
-                <div class="services-wraper">
-                    <div class="service__item pages">
-                        <a class="service__item-link" href="">
-                            <div class="service__item-icon"><i class="fa fa fa-code"></i></div>
-                            <div class="service__item-name">Strony www</div>
-                            <div class="service__item-text">
-                                Projektujemy i tworzymy strony internetowe przeznaczone dla biznesu oraz Klientów indywidualnych. Jesteśmy elastyczni, realizując projekty na miarę potrzeb.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service__item shops">
-                        <a class="service__item-link" href="">
+                <h2 class="short__title">Budujemy wizerunek w internecie</h2>
+                <h3 class="short__description">Realizujemy projekty związane z projektowaniem, wdrożeniem i utrzymywaniem stron www oraz sklepów internetowych. Zajmujemy się tematyką pozycjonowania serwisów (SEO), aby nasi Klienci otrzymali kompletny produkt - profesjonalny wizerunek w sieci!</h3>
+            </div>
+        </section>
 
-                            <div class="service__item-icon"><i class="fa fa fa-cart-plus"></i></div>
-                            <div class="service__item-name">Sklepy internetowe</div>
-                            <div class="service__item-text">
-                                Sklepy internetowe zaprojektowane przez New Web tworzone są z myślą o użytkowniku. Twój pomysł na biznes, przekładamy na realną sprzedaż internetową.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service__item seo">
-                        <a class="service__item-link" href="">
-                            <div class="service__item-icon"><i class="fa fa fa-search"></i></div>
+        <section class="section  short" id="offer">
+            <div class="container">
+                <div class="offer-wraper">
 
-                            <div class="service__item-name">Pozycjonowanie (SEO)</div>
-                            <div class="service__item-text">
-                                Promujemy strony internetowe w wyszukiwarce Google. Dzięki naszym metodom pozycjonowania, Twoja oferta ma szansę dotrzeć do większego grona odbiorców.
-                            </div>
-                        </a>
+                    <div class="offer-row">
+                        <div class="offer-row__item">
+                            <a href="">
+                                <h2 class="short__title">
+                                    Strony internetowe
+                                </h2>
+                                <p class="short__description">
+                                    Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+                                </p>
+                            </a>
+                        </div>
+                        <div class="offer-row__item-photo">
+                            <img src="./app/assets/images/strony-zdjecie.jpg" alt="Strony internetowe">
+                        </div>
+                    </div>
+                    <div class="offer-row">
+                        <div class="offer-row__item-photo">
+                            <img src="./app/assets/images/strony-zdjecie.jpg" alt="Sklepy online">
+                        </div>
+                        <div class="offer-row__item">
+                            <a href="">
+
+                                <h2 class="short__title">
+                                    Sklepy online
+                                </h2>
+                                <p class="short__description">
+                                    Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="offer-row">
+                        <div class="offer-row__item">
+                            <a href="">
+
+                                <h2 class="short__title">
+                                    Pozycjonowanie
+                                </h2>
+                                <p class="short__description">
+                                    Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+                                </p>
+                            </a>
+                        </div>
+                        <div class="offer-row__item-photo">
+                            <img src="./app/assets/images/strony-zdjecie.jpg" alt="Pozycjonowanie stron">
+                        </div>
+                    </div>
+                    <div class="offer-row">
+                        <div class="offer-row__item-photo">
+                            <img src="./app/assets/images/strony-zdjecie.jpg" alt="Utrzymanie serwisów">
+                        </div>
+                        <div class="offer-row__item">
+                            <a href="">
+
+                                <h2 class="short__title">
+                                    Utrzymanie serwisów
+                                </h2>
+                                <p class="short__description">
+                                    Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="section short additional">
+            <div class="container">
+
+                <h2 class="short__title">Pozostałe usługi</h2>
+                <h3 class="short__description">Zajmiemy się wszystkim, czego potrzebuje strona, czy sklep internetowy. Zapewnimy domenę, hosting oraz certyfikat SSL</h3>
+                <div class="additionals">
+                    <div class="additionals__item">
+                        <div class="additionals__icon"><i class="fas fa-globe"></i></div>
+                        <h4 class="additionals__title">
+                            Domena
+                        </h4>
+                        <p class="additionals__text">
+                            Z chęcią pomożemy z odnalezieniem odpowiedniej domeny oraz zintegrujemy ją z pocztą i serwerem.
+                        </p>
+
+                    </div>
+                    <div class="additionals__item">
+                        <div class="additionals__icon"><i class="fas fa-cloud"></i></div>
+                        <h4 class="additionals__title">
+                            Hosting
+                        </h4>
+                        <p class="additionals__text">
+                            Dobierzemy najlepszy serwer za rozsądną cenę. Wszystko skonfigurujemy za Ciebie.
+                        </p>
+
+                    </div>
+                    <div class="additionals__item">
+                        <div class="additionals__icon"><i class="fas fa-lock"></i></div>
+                        <h4 class="additionals__title">
+                            Ceryfikaty SSL
+                        </h4>
+                        <p class="additionals__text">
+                            Zainstalujemy certyfikat SSL na Twoim serwerze, potwierdzając bezpieczeństwo Twoich odbiorców.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="footer">
@@ -119,4 +204,5 @@
 
     <script src="app/build/out.js"></script>
 </body>
+
 </html>

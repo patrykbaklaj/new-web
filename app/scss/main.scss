@@ -3,7 +3,6 @@
 @import 'partials/nav';
 @import 'partials/page-header';
 @import 'partials/front-page/front-page-main';
-
 @import 'partials/counter';
 @import 'partials/front-page/project-intro';
 @import 'partials/front-page/testimonials-intro';
@@ -12,6 +11,8 @@
 @import 'partials/front-page/contact-intro';
 @import 'partials/google-map';
 @import 'partials/footer';
+
+@import 'partials/offer/offer';
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
@@ -36,6 +37,13 @@ html {
     @media screen and (max-width: 768px) {
         width: 90%;
     }
+}
+
+.page-header {
+    min-height: calc(100vh - 4em);
+    background-image: url("../assets/images/page-header-home.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .main {
