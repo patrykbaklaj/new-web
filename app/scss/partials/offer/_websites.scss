@@ -1,0 +1,45 @@
+.websites {
+
+    .page-header {
+        background-image: url("../assets/images/websites-background.jpg");
+        background-position: right;
+
+        .page-intro__title {
+            text-shadow: 1px 0 1px $websites-page-description;
+        }
+        .page-intro__description {
+            color: $websites-page-description;
+        }
+
+        .page-intro__arrow {
+        
+            i {
+                text-shadow: 0 0 5px $websites-page-title;
+            }
+        }
+    }
+    
+    .web-image {
+        background: $websites-page-title;
+        
+        .short__title,
+        .short__description {
+            color: #fff;
+        }
+         
+    }
+    
+    .additionals {
+        
+        &__title {
+            text-transform: none;
+        }
+        
+        &__icon {
+            color: #6a4d8a;
+        }
+    }
+}
+
+
+

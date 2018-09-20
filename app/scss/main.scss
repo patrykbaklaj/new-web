@@ -12,7 +12,7 @@
 @import 'partials/google-map';
 @import 'partials/footer';
 
-@import 'partials/offer/offer';
+@import 'partials/offer/offer-main';
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
@@ -47,7 +47,6 @@ html {
 }
 
 .main {
-
     margin-top: 4em;
 }
 
@@ -61,4 +60,55 @@ html {
     justify-content: center;
     text-align: center;
     width: 100%;
+}
+
+.background-pattern {
+    background: url("../assets/images/frontpage-pattern.png");
+    background-repeat: repeat !important;
+    background-size: auto !important;
+}
+
+.gray-gradient {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.02) 40%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.12) 100%);
+}
+
+.darkgray {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $darkgray-section-background;
+    color: $darkgray-section-color;
+    padding: 1.5em;
+
+    .quote {
+        width: 80%;
+        margin: 0 auto;
+
+        [class*="icon"] {
+            font-size: 2em;
+            margin: .5em 0;
+            color: $darkgray-icon-color;
+        }
+
+        &__icon-right {
+            text-align: right;
+        }
+
+        &__text {
+            font-weight: 300;
+            display: block;
+            padding: .2em 2em;
+            line-height: 1.5;
+            font-size: 1.4em;
+        }
+
+        &__author {
+            margin: 1em auto;
+            text-align: center;
+            font-size: 1.15em;
+            color: $darkgray-second-color;
+            font-weight: 600;
+        }
+    }
 }

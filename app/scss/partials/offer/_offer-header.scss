@@ -1,0 +1,65 @@
+.offer-page, 
+.websites {
+
+
+    .page-header {
+        background-image: url("../assets/images/offer-background.jpg");
+
+        .page-intro__title {
+            color: $offer-page-title;
+        }
+
+        .page-intro__arrow {
+            font-size: 2em;
+            position: relative;
+
+            i {
+                animation: bounce 1.6s ease-in-out infinite;
+                color: $offer-page-arrow-bounce;
+                animation-delay: 1s;
+            }
+
+            &::after {
+                animation: shadow 1.6s ease-in-out infinite;
+                animation-delay: 1s;
+                background: $offer-page-arrow-bounce;
+                opacity: .3;
+                border-radius: 35%;
+                bottom: - 26px;
+                content: "";
+                height: 7px;
+                left: 0;
+                margin-left: -20%;
+                position: absolute;
+                width: 140%;
+            }
+        }
+    }
+}
+
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0%);
+    }
+
+    40%,
+    60% {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes shadow {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    40%,
+    60% {
+        transform: scale(.7);
+        background: $dot-color;
+        opacity: .75;
+    }
+}

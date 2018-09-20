@@ -1,0 +1,70 @@
+@import 'partials/offer/offer-header';
+@import 'partials/offer/offer-details';
+@import 'partials/offer/offer-more';
+@import 'partials/offer/websites';
+
+.offer-page {
+
+    .short__description,
+    .short__title {
+        color: $offer-details-color;
+    }
+}
+
+.web-image,
+.websites {
+    .short__description {
+        font-size: 1.2em;
+        font-weight: 300;
+        padding-bottom: 1em;
+    }
+}
+
+.additional,
+.benefit {
+
+    .short__description {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-bottom: 2em;
+    }
+}
+
+
+
+//.benefits {
+//
+//
+//    &__item {
+//        background: rgba(255, 255, 255, 0.4);
+//        cursor: pointer;
+//        border-radius: 6px;
+//        padding: 1.5em;
+//        margin: 1.5em;
+//        width: 25%;
+//        border: 1px solid $dot-color;
+//        transition: all .3s;
+//
+//        &:hover {
+//            background: rgba(255, 255, 255, 1);
+//        }
+//
+//    }
+//
+//    &__icon {
+//        font-size: 2em;
+//        color: $dot-color;
+//    }
+//
+//    &__title {
+//        font-size: 1.3em;
+//        font-weight: 700;
+//        margin: 1em 1.5em;
+//    }
+//
+//    &__text {
+//        line-height: 1.5;
+//        padding: 0 1em;
+//        font-weight: 300;
+//    }
+//}
