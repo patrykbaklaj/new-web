@@ -170,21 +170,8 @@ table {
   font-size: 2em;
   display: inline-block; }
 
-.short {
-  min-height: 40vh;
-  padding: 2em 0; }
-  .short__title {
-    color: #545454;
-    font-size: 2.2em;
-    font-weight: 700;
-    padding: 1em; }
-  .short__description {
-    color: #4a5255;
-    line-height: 1.5;
-    margin: 1em auto 4em auto;
-    width: 80%; }
-  .short.contact-intro, .short.project-intro {
-    padding-bottom: 0; }
+.short.contact-intro, .short.project-intro {
+  padding-bottom: 0; }
 
 #counter {
   background: url(fdee3bbe6f3c51fad673edf363961d4d.jpg);
@@ -550,6 +537,12 @@ table {
     line-height: 1.5;
     padding: 0 1em;
     font-weight: 300; }
+  .additionals .next,
+  .benefits .next {
+    font-size: 4em;
+    align-self: center;
+    padding: .25em;
+    color: #ffde00; }
 
 .benefits__item {
   width: 23%;
@@ -574,11 +567,67 @@ table {
   .websites .web-image .short__description {
     color: #fff; }
 
+.websites .background-pattern .short__title,
+.websites .background-pattern .short__description,
+.websites .cms .short__title,
+.websites .cms .short__description {
+  color: #6a4d8a; }
+
 .websites .additionals__title {
   text-transform: none; }
 
-.websites .additionals__icon {
-  color: #6a4d8a; }
+.websites .additionals.how {
+  flex-wrap: nowrap; }
+
+.websites .quote__text {
+  text-align: center; }
+
+.cms__wraper {
+  display: flex;
+  justify-content: space-between; }
+
+.cms__item {
+  box-sizing: border-box;
+  width: 45%;
+  border-radius: 6px;
+  box-shadow: 12px 12px 11px -2px rgba(200, 200, 200, 0.6);
+  font-weight: 300;
+  padding: 2em 2em;
+  line-height: 1.5;
+  margin-bottom: 2em; }
+  .cms__item-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 2em;
+    position: relative;
+    display: inline-block; }
+    .cms__item-title::after {
+      position: absolute;
+      content: "";
+      bottom: -20px;
+      left: 0;
+      width: 130%;
+      margin-left: -15%;
+      height: 4px;
+      border-radius: 6px;
+      background: #6a4d8a; }
+  .cms__item-description {
+    margin-bottom: 2em; }
+  .cms__item-adventage, .cms__item-disadventage {
+    font-weight: 600;
+    margin: 1em; }
+  .cms__item i[class*="plus"] {
+    color: #6a4d8a; }
+  .cms__item i[class*="minus"] {
+    color: #ffde00; }
+
+.cms__sumary {
+  padding: 2em;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.5; }
 
 .offer-page .short__description,
 .offer-page .short__title {
@@ -643,6 +692,22 @@ html {
   text-align: center;
   width: 100%; }
 
+.short {
+  min-height: 40vh;
+  padding: 2em 0; }
+  .short__title {
+    color: #545454;
+    font-size: 2.2em;
+    font-weight: 700;
+    padding: 1em; }
+  .short__description {
+    color: #4a5255;
+    line-height: 1.5;
+    margin: 1em auto 4em auto;
+    width: 80%; }
+  .short.contact-intro, .short.project-intro {
+    padding-bottom: 0; }
+
 .background-pattern {
   background: url(4acc5d388188a4f35a65033e2319f637.png);
   background-repeat: repeat !important;
@@ -666,7 +731,33 @@ html {
   align-items: center;
   background: #272b2f;
   color: #fff;
-  padding: 1.5em; }
+  padding: 1.5em;
+  text-align: center; }
+  .darkgray__title {
+    font-size: 2.2em;
+    padding: 1em; }
+  .darkgray__description {
+    font-size: 1.2em;
+    line-height: 1.5; }
+  .darkgray__list {
+    margin: 1.8em 0;
+    line-height: 1.5;
+    list-style-position: inside;
+    counter-reset: my-awesome-counter; }
+    .darkgray__list-item {
+      counter-increment: my-awesome-counter; }
+      .darkgray__list-item::before {
+        font-size: 2em;
+        content: counter(my-awesome-counter) ". ";
+        color: #ffde00;
+        font-weight: 600; }
+  .darkgray .darkgray-list-wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .darkgray .quote {
     width: 80%;
     margin: 0 auto; }
@@ -688,3 +779,6 @@ html {
       font-size: 1.15em;
       color: #545454;
       font-weight: 600; }
+
+.dot-color {
+  color: #ffde00; }

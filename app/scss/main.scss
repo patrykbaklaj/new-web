@@ -62,6 +62,32 @@ html {
     width: 100%;
 }
 
+.short {
+
+    min-height: 40vh;
+    padding: 2em 0;
+
+
+    &__title {
+        color: $short-title-color;
+        font-size: 2.2em;
+        font-weight: 700;
+        padding: 1em;
+    }
+
+    &__description {
+        color: $short-text-color;
+        line-height: 1.5;
+        margin: 1em auto 4em auto;
+        width: 80%;
+    }
+
+    &.contact-intro,
+    &.project-intro {
+        padding-bottom: 0;
+    }
+}
+
 .background-pattern {
     background: url("../assets/images/frontpage-pattern.png");
     background-repeat: repeat !important;
@@ -80,6 +106,41 @@ html {
     background: $darkgray-section-background;
     color: $darkgray-section-color;
     padding: 1.5em;
+    text-align: center;
+
+    &__title {
+        font-size: 2.2em;
+        padding: 1em;
+    }
+
+    &__description {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+    &__list {
+        margin: 1.8em 0;
+        line-height: 1.5;
+        //        list-style: decimal;
+        list-style-position: inside;
+        counter-reset: my-awesome-counter;
+
+
+        &-item {
+            counter-increment: my-awesome-counter;
+            &::before {
+                font-size: 2em;
+                content: counter(my-awesome-counter) ". ";
+                color: $dot-color;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .darkgray-list-wraper {
+        display: flex;
+        justify-content: center;
+    }
 
     .quote {
         width: 80%;
@@ -111,4 +172,8 @@ html {
             font-weight: 600;
         }
     }
+}
+
+.dot-color {
+    color: $dot-color;
 }
