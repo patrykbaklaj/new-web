@@ -582,6 +582,14 @@ table {
 .websites .quote__text {
   text-align: center; }
 
+.websites .darkgray.needs .darkgray__description {
+  font-weight: 300;
+  margin: 1.5em auto;
+  width: 80%; }
+
+.websites .next .additionals__item {
+  box-shadow: 12px 12px 11px -2px rgba(0, 0, 0, 0.6); }
+
 .cms__wraper {
   display: flex;
   justify-content: space-between; }
