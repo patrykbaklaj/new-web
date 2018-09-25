@@ -65,8 +65,13 @@
             width: 50%;
             min-height: 15vh;
 
-            @media (max-width: 900px) {
+            @media screen and (max-width: 900px) {
                 min-height: 25vh;
+                width: 80%;
+            }
+            @media screen and (max-width: 600px) {
+                min-height: 25vh;
+                width: 90%;
             }
         }
 

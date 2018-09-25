@@ -1,9 +1,8 @@
-
 .project-intro {
     //    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJElEQVQoU2NkIAIwEqGGgYaKsrOy/0+dNhXFBhpah823RFkHAJroBAqI3w7lAAAAAElFTkSuQmCC);
     background: url("../assets/images/frontpage-pattern.png");
     background-attachment: fixed;
-    
+
 
     .project-intro-gallery {
 
@@ -54,10 +53,27 @@
 
             &:hover {
                 transform: translateY(-40px);
-                
+                z-index: 1000;
+
                 &::after {
                     background: none;
                 }
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+
+            &__item {
+                width: 50%;
+                min-height: 300px;
+            }
+        }
+        
+        @media screen and (max-width: 460px) {
+
+            &__item {
+                width: 100%;
+                min-height: 400px;
             }
         }
     }

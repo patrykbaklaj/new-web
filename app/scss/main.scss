@@ -68,6 +68,8 @@ html {
     padding: 2em 0;
 
 
+
+
     &__title {
         color: $short-title-color;
         font-size: 2.2em;
@@ -85,8 +87,37 @@ html {
     &.contact-intro,
     &.project-intro {
         padding-bottom: 0;
+
+    }
+
+    @media screen and (max-width: 900px) {
+        &__title {
+            font-size: 1.8em;
+        }
+
+        &__description {
+            font-size: 1em;
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        
+        padding: .5em 0;
+                
+        &__title {
+            font-size: 1.5em;
+        }
+
+        &__description {
+            font-size: .9em;
+            width: 100%;
+        }
     }
 }
+
+
+
 
 .background-pattern {
     background: url("../assets/images/frontpage-pattern.png");
@@ -154,7 +185,7 @@ html {
         &__icon-left {
             text-align: left;
         }
-        
+
         &__icon-right {
             text-align: right;
         }
@@ -184,7 +215,7 @@ html {
 
 
 .reasons {
-    
+
     width: 80%;
     margin: 0 auto;
 
@@ -196,14 +227,13 @@ html {
             margin-bottom: .5em;
             font-weight: 600;
             color: $websites-page-title;
-        }        
-        
+        }
+
         &-description {
-//            font-size: 1.5em;
+            //            font-size: 1.5em;
             margin-bottom: 1.2em;
             line-height: 1.5;
-            font-weight: 300;
-//            color: $websites-page-title;
+            font-weight: 300; //            color: $websites-page-title;
         }
     }
 }

@@ -6,6 +6,8 @@
     padding: 1em 0 3em 0;
     width: 80%;
     
+    
+    
     .social i {
         font-size: 1.5em;
         line-height: 1;
@@ -14,5 +16,13 @@
         &:hover {
             transform: scale(1.4);
         }
+    }
+    
+    @media screen and (max-width: 660px) {
+        width: 100%;
+    }
+    
+    @media screen and (max-width: 550px) {
+            flex-direction: column;
     }
 }

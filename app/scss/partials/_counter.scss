@@ -8,6 +8,10 @@
     .counter-wraper {
         display: flex;
         justify-content: space-around;
+
+        @media screen and (max-width: 620px) {
+            flex-wrap: wrap;
+        }
     }
 
     .counter-item {
@@ -19,6 +23,10 @@
 
         &__number {
             font-size: 2.3em;
+
+            @media screen and (max-width: 700px) {
+                font-size: 1.6em;
+            }
         }
 
         &__text {
@@ -26,14 +34,34 @@
             letter-spacing: 2px;
             padding-top: 1em;
             text-transform: uppercase;
+
+            @media screen and (max-width: 700px) {
+                font-size: 1em;
+            }
+
+
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            margin: 1em 0;
         }
     }
 
     .separator {
         display: block;
-        background: $counter-color;;
+        background: $counter-color;
+        ;
         line-height: 2em;
         text-shadow: 1px 1px 1px gray;
         width: 2px;
+
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 2.5em 0;
     }
 }
