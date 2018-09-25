@@ -151,6 +151,10 @@ html {
             color: $darkgray-icon-color;
         }
 
+        &__icon-left {
+            text-align: left;
+        }
+        
         &__icon-right {
             text-align: right;
         }
