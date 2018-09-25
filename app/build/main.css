@@ -741,6 +741,24 @@ html {
     color: inherit;
     text-decoration: none; }
 
+/*Edge*/
+@supports (-ms-accelerator: true) {
+  html {
+    overflow: hidden;
+    height: 100%; }
+  body {
+    overflow: auto;
+    height: 100%; } }
+
+/*Ie 10/11*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+    overflow: hidden;
+    height: 100%; }
+  body {
+    overflow: auto;
+    height: 100%; } }
+
 .container {
   margin: 0 auto;
   width: 80%; }
@@ -749,13 +767,14 @@ html {
       width: 90%; } }
 
 .page-header {
-  min-height: calc(100vh - 4em);
+  height: calc(100vh - 8vh);
   background-image: url(ea675ca3d4b5bad787c53e7c3dce8440.jpg);
   background-attachment: fixed;
-  background-size: cover; }
-
-.main {
+  background-size: cover;
   margin-top: 4em; }
+  @supports (-webkit-overflow-scrolling: touch) {
+    .page-header {
+      background-attachment: scroll; } }
 
 .section {
   -webkit-box-align: center;
