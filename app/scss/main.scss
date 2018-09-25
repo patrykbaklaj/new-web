@@ -120,8 +120,7 @@ html {
 
     &__list {
         margin: 1.8em 0;
-        line-height: 1.5;
-        //        list-style: decimal;
+        line-height: 1.5; //        list-style: decimal;
         list-style-position: inside;
         counter-reset: my-awesome-counter;
 
@@ -176,4 +175,31 @@ html {
 
 .dot-color {
     color: $dot-color;
+}
+
+
+
+.reasons {
+    
+    width: 80%;
+    margin: 0 auto;
+
+    &__item {
+
+
+        &-title {
+            font-size: 1.2em;
+            margin-bottom: .5em;
+            font-weight: 600;
+            color: $websites-page-title;
+        }        
+        
+        &-description {
+//            font-size: 1.5em;
+            margin-bottom: 1.2em;
+            line-height: 1.5;
+            font-weight: 300;
+//            color: $websites-page-title;
+        }
+    }
 }
