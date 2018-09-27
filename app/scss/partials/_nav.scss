@@ -8,12 +8,37 @@
 
 .navbar {
     font-weight: 400;
+
+    @media screen and (max-width: 700px) {
+        display: none;
+        position: fixed;
+        top: 4em;
+        margin-left: -5%;
+        background: black;
+        width: 100%;
+
+        &__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
+
+
 
 .header-wraper {
     display: flex;
     justify-content: space-between;
-    line-height: 1.5;
+    line-height: 1.5; //    position: relative;
+}
+
+.logo {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    letter-spacing: 12px;
+
 }
 
 .navbar__item {
@@ -33,8 +58,7 @@
                 border-radius: 3px;
                 bottom: -15px;
                 content: "";
-                transition: all 0.23s;
-                //                height: 0px;
+                transition: all 0.23s; //                height: 0px;
                 height: 2px;
                 left: -10%;
                 opacity: 0;
@@ -55,12 +79,15 @@
 
     &-main:last-child {
         margin-right: 0;
+
+        @media screen and (max-width: 700px) {
+            margin: 0 1em;
+        }
     }
 
     &-sub {
-        display: inline-block;
         font-size: 0.8em;
-        margin: 0 1em;
+        margin: 0 0 0 1.5em;
 
         a {
             border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -79,16 +106,25 @@
         margin-right: 0;
     }
 
-    &-sub:first-child a {
-        border: none;
-        color: #272b2f;
-        font-size: 4em;
-        font-weight: 300;
-        line-height: 1em;
-        margin-right: 2em;
-        padding: 0;
-        vertical-align: middle;
+    &-sub:first-child {
+
+        margin: 0 auto 0 0;
+
+        a {
+            border: none;
+            color: #272b2f;
+            font-size: 4em;
+            font-weight: 300;
+            line-height: 1em;
+            padding: 0;
+            vertical-align: middle;
+        }
     }
+}
+
+.navbar__sub-wraper {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar__sub {
@@ -101,6 +137,17 @@
     transition: all 0.4s;
     width: 100%;
 }
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+
+    @media screen and (min-width: 701px) {
+        display: none;
+    }
+}
+
 
 @keyframes fadeIn {
     0% {
@@ -136,4 +183,8 @@
 
 .fadeOut {
     animation: fadeOut .6s;
+}
+
+.visible {
+    display: block !important;
 }

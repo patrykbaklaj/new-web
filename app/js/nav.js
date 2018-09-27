@@ -1,13 +1,45 @@
 export function navHandler() {
-    const links = document.querySelectorAll(".navbar__item-main");
 
+
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".navbar");
+    const links = document.querySelectorAll(".navbar__item-main");
     const submenu = document.querySelector(".navbar__sub");
-    for (let i = 0; i < links.length; i++) {
-        if (links[i].children.length > 1) {
-            links[i].addEventListener("mouseenter", handleMouseEnter);
-            //            submenu.addEventListener("mouseenter", handleMouseEnter);
-            links[i].addEventListener("mouseleave", handleMouseLeave);
-            //            submenu.addEventListener("mouseleave", handleMouseLeave);
+    const widthToShowHamburger = 700;
+
+
+    menuMainHandler();
+
+    window.addEventListener("resize", menuMainHandler);
+
+    function menuMainHandler() {
+        if (checkWidth()) {
+            rwdMenu();
+
+        } else {
+            handleMenuHoover();
+        }
+    }
+
+
+    function rwdMenu() {
+        hamburger.addEventListener("click", showHideRwdMenu);
+        
+        for (let i = 0; i < links.length; i++) {
+            if (links[i].children.length > 1) {
+                links[i].removeEventListener("mouseenter", handleMouseEnter);
+            }
+        }
+    }
+
+    function handleMenuHoover() {
+        for (let i = 0; i < links.length; i++) {
+            if (links[i].children.length > 1) {
+                links[i].addEventListener("mouseenter", handleMouseEnter);
+                //            submenu.addEventListener("mouseenter", handleMouseEnter);
+                links[i].addEventListener("mouseleave", handleMouseLeave);
+                //            submenu.addEventListener("mouseleave", handleMouseLeave);
+            }
         }
     }
 
@@ -34,10 +66,20 @@ export function navHandler() {
     }
 
     function removeHandlerEnter() {
-        submenu.removeEventListener("animationend", handleMouseEnter, true);
+        submenu.removeEventListener("animationend", handleMouseEnter);
     }
 
     function removeHandlerLeave() {
         submenu.removeEventListener("animationend", handleAnimationEnd);
     }
+
+    function checkWidth() {
+        return window.innerWidth <= widthToShowHamburger ? true : false;
+    }
+
+    function showHideRwdMenu() {
+        menu.classList.toggle("visible");
+        menu.classList.toggle("fadeIn");
+    }
+
 }

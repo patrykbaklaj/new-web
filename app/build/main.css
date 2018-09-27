@@ -41,11 +41,29 @@ table {
 
 .navbar {
   font-weight: 400; }
+  @media screen and (max-width: 700px) {
+    .navbar {
+      display: none;
+      position: fixed;
+      top: 4em;
+      margin-left: -5%;
+      background: black;
+      width: 100%; }
+      .navbar__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
 
 .header-wraper {
   display: flex;
   justify-content: space-between;
   line-height: 1.5; }
+
+.logo {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  letter-spacing: 12px; }
 
 .navbar__item-main {
   display: inline-block;
@@ -75,11 +93,13 @@ table {
 
 .navbar__item-main:last-child {
   margin-right: 0; }
+  @media screen and (max-width: 700px) {
+    .navbar__item-main:last-child {
+      margin: 0 1em; } }
 
 .navbar__item-sub {
-  display: inline-block;
   font-size: 0.8em;
-  margin: 0 1em; }
+  margin: 0 0 0 1.5em; }
   .navbar__item-sub a {
     border-bottom: 2px solid rgba(0, 0, 0, 0); }
     .navbar__item-sub a::after {
@@ -90,15 +110,20 @@ table {
 .navbar__item-sub:last-child {
   margin-right: 0; }
 
-.navbar__item-sub:first-child a {
-  border: none;
-  color: #272b2f;
-  font-size: 4em;
-  font-weight: 300;
-  line-height: 1em;
-  margin-right: 2em;
-  padding: 0;
-  vertical-align: middle; }
+.navbar__item-sub:first-child {
+  margin: 0 auto 0 0; }
+  .navbar__item-sub:first-child a {
+    border: none;
+    color: #272b2f;
+    font-size: 4em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 0;
+    vertical-align: middle; }
+
+.navbar__sub-wraper {
+  display: flex;
+  justify-content: flex-end; }
 
 .navbar__sub {
   background: #3a3f45;
@@ -109,6 +134,14 @@ table {
   text-align: right;
   transition: all 0.4s;
   width: 100%; }
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  font-size: 2em; }
+  @media screen and (min-width: 701px) {
+    .hamburger {
+      display: none; } }
 
 @keyframes fadeIn {
   0% {
@@ -133,6 +166,9 @@ table {
 
 .fadeOut {
   animation: fadeOut .6s; }
+
+.visible {
+  display: block !important; }
 
 .page-intro {
   color: #fff; }
