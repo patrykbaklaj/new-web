@@ -617,6 +617,22 @@ table {
         box-shadow: 12px 12px 11px -2px rgba(200, 200, 200, 0.6);
         height: auto;
         width: 80%; }
+  @media screen and (max-width: 1100px) {
+    .offer-row {
+      padding: 1.5em 0; }
+      .offer-row__item-photo img {
+        width: 100%; } }
+  @media screen and (max-width: 800px) {
+    .offer-row {
+      flex-direction: column; }
+      .offer-row:nth-child(odd) {
+        flex-direction: column-reverse; }
+      .offer-row__item {
+        width: 100%; }
+        .offer-row__item-photo {
+          width: 60%; }
+          .offer-row__item-photo img {
+            width: 100%; } }
 
 .additionals,
 .benefits {
@@ -684,6 +700,19 @@ table {
 
 .benefits__title {
   text-transform: none; }
+
+@media screen and (max-width: 1200px) {
+  .benefits__item {
+    width: 30%; } }
+
+@media screen and (max-width: 900px) {
+  .benefits__item {
+    width: 45%; } }
+
+@media screen and (max-width: 600px) {
+  .benefits__item {
+    width: 80%;
+    margin: .5em auto; } }
 
 .websites .page-header {
   background-image: url(26ed9c5f689314b807b5744af39fa821.jpg);
