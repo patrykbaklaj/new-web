@@ -741,6 +741,8 @@ table {
 
 .websites .additionals.how {
   flex-wrap: nowrap; }
+  .websites .additionals.how .next-down {
+    display: none; }
   @media screen and (max-width: 1100px) {
     .websites .additionals.how {
       flex-wrap: wrap; }
