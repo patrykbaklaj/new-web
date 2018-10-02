@@ -177,7 +177,6 @@ table {
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 100%;
-    margin-top: 2em;
     word-wrap: break-word; }
     @media (max-width: 768px) {
       .page-intro__title {
@@ -894,7 +893,7 @@ html {
       width: 90%; } }
 
 .page-header {
-  height: calc(100vh - 6.5vh);
+  height: 92vh;
   background-image: url(ea675ca3d4b5bad787c53e7c3dce8440.jpg);
   background-attachment: fixed;
   background-size: cover;
