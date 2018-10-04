@@ -653,6 +653,12 @@ table {
     .additionals__item:hover,
     .benefits__item:hover {
       transform: translate(10px, -10px); }
+    .additionals__item .price-detail,
+    .benefits__item .price-detail {
+      padding: 1em; }
+      .additionals__item .price-detail span,
+      .benefits__item .price-detail span {
+        font-size: 2em; }
   .additionals__icon, .additionals__icon-down,
   .benefits__icon,
   .benefits__icon-down {
